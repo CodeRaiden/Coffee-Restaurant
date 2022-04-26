@@ -1,9 +1,11 @@
 import React from 'react'
+import CardsComponent from '../ReusableComponents/CardsComponent'
 
 function Menu() {
   return (
     <div>
-      <h2>Our Coffee Menu</h2>
+      <h2>Coffee Menu</h2>
+      <CardsComponent />
     </div>
   )
 }

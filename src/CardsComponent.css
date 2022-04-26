@@ -1,0 +1,38 @@
+.menu {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+/* now here we add a media query to mamage the display of the booklist class when the screen gets to 768px. and in the body of the .booklist className we will make the grid appear as three in a row*/
+@media screen and (min-width: 768px) {
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+    /* if we want all the components to be extended at the same time then we can comment out the code below as done here */
+    /* align-items: start; */
+  }
+}
+
+/* now we style each book uniformly by the added books className */
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+/* we can also style all the <h1> tag in the Title by selecting the <h> by first selecting the .book className and the selecting the h1 as done below */
+.card h1 {
+  margin-top: 0.5rem;
+}
+
+.card h4 {
+  color: #617d98;
+  letter-spacing: 0.75px;
+  margin-top: 0.25rem;
+}
+
+.card p {
+  margin-top: 0.5rem;
+}
